@@ -36,7 +36,8 @@ class MyCustomForm extends StatefulWidget {
 class MyCustomFormState extends State<MyCustomForm> {
   String email = '';
   final passwordController = TextEditingController();
-  
+  final emailController = TextEditingController();
+
   @override
   void initState() {
     super.initState();
@@ -78,6 +79,7 @@ class MyCustomFormState extends State<MyCustomForm> {
           suffixIcon: IconButton(
             icon: const Icon(Icons.close),
             onPressed: () {
+              emailController.clear();
             },
           ),
         ),
