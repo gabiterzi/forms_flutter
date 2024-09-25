@@ -68,6 +68,7 @@ class MyCustomFormState extends State<MyCustomForm> {
   }
 
   Widget buildEmail() => TextField(
+        controller: emailController,
         onChanged: (value) => {
           email = value
           },
